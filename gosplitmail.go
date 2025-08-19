@@ -1,0 +1,5 @@
+package gosplitmail
+
+func SplitEmail() {
+
+}
