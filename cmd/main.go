@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jakemorrissey/go-splitmail/gosplitmail"
+	"github.com/jmm9683/gosplitmail"
 )
 
 func main() {
@@ -57,7 +57,7 @@ func main() {
 
 	// Example: Print the email bodies to stdout
 	for i, msg := range messages {
-		fmt.Printf("Email #%d to %s:\n%s\n\n", i+1, groups[i].ThreadList, msg.GetBody("text/html"))
+		fmt.Printf("Email #%d to %s:\n%s\n\n", i+1, groups[i].ThreadList, msg)
 	}
 
 	// To actually send, use gomail.Dialer (not shown here)
